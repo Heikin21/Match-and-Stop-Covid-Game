@@ -1,0 +1,14 @@
+#title {
+	margin: auto;
+	width: 400px;
+	height: 100px;
+}
+#startGameSpace {
+	margin: auto;
+	width: 100px;
+}
+#cellImage {
+	background-color: #000000;
+	width: 200px;
+	height: 200px;
+}
