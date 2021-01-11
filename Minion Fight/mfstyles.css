@@ -1,0 +1,19 @@
+#gameSpace {
+	margin: auto;
+	width: 536px;
+	height: 536px;
+	border:solid;
+	border-color: blue;
+	border-width: 10px;
+}
+.orbs {
+	width: 120px;
+	height: 120px;
+	border:solid;
+	border-width: 2px;
+	border-color: #000000;
+	border-radius: 60px;
+	background-color: #ffffff;
+	float: left;
+	margin: 5px 5px 5px 5px;
+}
