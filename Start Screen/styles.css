@@ -5,10 +5,25 @@
 }
 #startGameSpace {
 	margin: auto;
-	width: 100px;
+	width: 200px;
+	background-color: blue;
+}
+#startGame {
+  margin: 0;
+  left: 50px;
 }
 #cellImage {
-	background-color: #000000;
+	background-image: url(/images/Cell.png);
+}
+#name {
+	margin: auto;
+	width: 400px;
+}
+#cellText {
+	margin: auto;
+	width: 400px;
+}
+#nextButtonSpace {
+	margin: auto;
 	width: 200px;
-	height: 200px;
 }
