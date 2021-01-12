@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<html lang="en">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3560966c14.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="first.css">
+<head>
+    <title>Level 1</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Stage 1: Symptons</h1>
+            <p id="header">Welcome to Stage 1</p>
+        </header>
+        <div id="headerButton" onclick="stageOneTalk()">Start</div>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="head-side-cough">
+                <i class="fas fa-head-side-cough"></i>
+            </li>
+            <li class="card" type="thermometer-full">
+                <i class="fas fa-thermometer-full"></i>
+            </li>
+            <li class="card" type="thermometer-full">
+                <i class="fas fa-thermometer-full"></i>
+            </li>
+            <li class="card" type="tired">
+                <i class="far fa-tired"></i>
+            </li>
+            <li class="card" type="head-side-cough">
+                <i class="fas fa-head-side-cough"></i>
+            </li>
+            <li class="card" type="lungs">
+                <i class="fas fa-lungs"></i>
+            </li>
+            <li class="card" type="tired">
+                <i class="far fa-tired"></i>
+            </li>
+            <li class="card" type="lungs">
+                <i class="fas fa-lungs"></i>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Signs of COVID-19:</h2>
+                <div class="content-1"> 
+                    <ul>
+                    <i class="fas fa-thermometer-full iconSpace"></i>
+                    Fever
+                    </ul>
+                    <ul> 
+                    <i class="fas fa-head-side-cough iconSpace"></i>
+                    Cough
+                    </ul>
+                    <ul> 
+                    <i class="far fa-tired iconSpace"></i>
+                    Tired
+                    </ul>
+                    <ul>
+                    <i class="fas fa-lungs iconSpace"></i>
+                    Trouble Breathing
+                    </ul>
+                </div>
+                <div onclick="window.location.href = '../second/second.html';" id="button" class="popup">Stage 2
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="first.js"></script>
+</body>
+</html>
