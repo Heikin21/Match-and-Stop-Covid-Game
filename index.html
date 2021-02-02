@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<link rel="icon" type="image/png" href="images/WhiteCell.png">
+	<title> Covid Match and Stop Covid Game</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<div>
 		<h1 id="title"> Match and Stop Covid Game</h1>
-		<div id="startGame" onclick="window.location.href = 'first-fight/first.html';">Begin!</div>
 	</div>
-	<div>
-		<div id=""></div>
+	<div id="startSpace">
+		<div id="cellImage"></div>
 		<p id="name">???</p>
-		<p id="cellText">Welcome to the Game!</p>
-		<div id="nextButtonSpace">
-			<div id="nextButton" onclick = "cellTalk()">Next</div>
-		</div>
+		<p id="cellText">Welcome!</p>
+		<div id="nextButton" onclick="cellTalk()">Next</div>
 	</div>
+	<div id="stages">
+		<div id="stageOne" class="allStages" onclick="window.location.href = 'first-fight/first.html';"> Stage 1</div>
+		<div id="stageTwo" class="allStages"> Stage 2</div>
+		<div id="stageThree" class="allStages"> Stage 3</div>
+	</div>
+	<div id="boss" class="bossStage"> Boss Battle!</div>
 	<script type = "text/javascript" src = "match.js" ></script>
 </body>
 </html>

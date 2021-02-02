@@ -120,3 +120,7 @@ function stageOneTalk() {
         document.getElementById("header").innerHTML = "Match all the clues together and get the final clue needed to beat Covid"
     }
 }
+var time = 0;
+function starTimer() {
+    time += 1;
+}

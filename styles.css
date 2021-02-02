@@ -1,27 +1,84 @@
+body {
+	background-image: url(images/pattern.png);
+}
 #title {
 	margin: auto;
 	width: 400px;
-	height: 100px;
+	height: 50px;
+	border: solid;
+	background-color: #ffffff;
+	margin-bottom: 20px;
 }
 #startGame {
 	margin: auto;
 	width: 100px;
 }
-#cellImage {
+#startSpace {
+	width: 400px;
+	height: 200px;
+	border: solid;
 	margin: auto;
-	background-image: url(images/Cell.png);
+}
+#cellImage {
+	background-image: url(images/WhiteCell.png);
 	width: 200px;
 	height: 200px;
+	background-color: #ffffff;
+	float: left;
+	border:solid;
+	border-left: 0px;
+	border-top: 0px;
 }
 #name {
 	margin: auto;
 	width: 400px;
+	border: solid;
+	border-left: 0px;
+	border-bottom: 0px;
+	border-top: 0px;
 }
 #cellText {
 	margin: auto;
 	width: 400px;
+	height: 160px;
+	border: solid;
+	border-left: 0px;
+	text-align: center;
 }
 #nextButton {
+	width: 400px;
+	border:solid;
+	text-align: center;
+	border-left: 0px;
+	border-top: 0px;
+	border-bottom: 0px;
+}
+#stages {
 	margin:auto;
-	width: 100px;
+	margin-top: 50px;
+	width: 400px;
+	height: 100px;
+}
+.allStages {
+	border:solid;
+	float: left;
+	width: 120px;
+	height: 100px;
+}
+#stageOne {
+
+}
+#stageTwo {
+	margin-left: 11px;
+	margin-right: 11px;
+}
+#stageThree {
+
+}
+#boss {
+	margin: auto;
+	margin-top: 20px;
+	width: 300px;
+	height: 100px;
+	border:solid;
 }
