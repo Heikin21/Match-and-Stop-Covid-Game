@@ -33,7 +33,9 @@ body {
 h1 {
 	text-align: center;
 	border: solid;
-	background-color: #E5F720;
+	background-color: #006e6a;
+	color: #e6fffe;
+	border-color: #000000;
 	padding-left: 30px;
 	padding-right: 30px;
 }
@@ -41,13 +43,30 @@ h1 {
 	text-align: center;
 	margin: auto;
 	margin-bottom: 15px;
-	background-color: #E5F720;
+	background-color: #e6fffe;
 	border: solid;
 	width: 600px;
-	height: 90px;
+	height: 60px;
+}
+#headerButton {
+	margin: auto;
+	background-color: #e6fffe;
+	text-align: center;
+	border: solid;
+	width: 100px;
+	height: 30px;
+}
+#headerButton:hover {
+	background-color: #006e6a;
+	box-shadow: 5px 5px 3px grey;
+	cursor: pointer;
+}
+#headerButton:active {
+	transform: translateY(4px);
+	box-shadow: 5px 2px 3px grey;
 }
 .deck {
-	background: #5c5c5c;
+	background-color: #004f4c;
 	padding: 10px;
 	border-radius: 4px;
 	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
@@ -57,12 +76,15 @@ h1 {
 	align-items: center;
 	margin: 0 0 3em;
 }
+#card-deck {
+	margin-top: 10px;
+}
 
 .deck .card {
 	height: 200px;
 	width: 100px;
 	margin: 0.2rem 0.2rem;
-	background: #d9d9d9;;
+	background: #e6fffe;;
 	font-size: 0;
 	color: #ffffff;
 	border-radius: 5px;
@@ -89,7 +111,7 @@ h1 {
 
 .deck .card.match {
 	cursor: default;
-	background: #E5F720;
+	background: #006e6a;
 	font-size: 33px;
 	animation-name: correct;
 	-webkit-backface-visibility: visible !important;

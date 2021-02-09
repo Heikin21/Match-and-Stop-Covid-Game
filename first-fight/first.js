@@ -114,13 +114,10 @@ function stageOneTalk() {
         document.getElementById("header").innerHTML = "In this stage we will learn about the symptoms of Covid";
     }
     else if (talking == 2) {
-        document.getElementById("header").innerHTML = "Flip the cards below and find matching clues";
+        document.getElementById("header").innerHTML = "Flip the cards below and find clues";
     }
     else if (talking == 3) {
-        document.getElementById("header").innerHTML = "Match all the clues together and get the final clue needed to beat Covid"
+        document.getElementById("header").innerHTML = "Match all the clues together and get the final clue needed to beat Covid!"
+        document.getElementById("headerButton").style.display = "none";
     }
-}
-var time = 0;
-function starTimer() {
-    time += 1;
 }

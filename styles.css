@@ -1,13 +1,13 @@
 body {
-	background-image: url(images/pattern.png);
+	background-image: url(images/pixel-heart.png);
 }
 #title {
 	margin: auto;
 	width: 400px;
 	height: 50px;
 	border: solid;
-	background-color: #ffffff;
 	margin-bottom: 20px;
+	background-color: #e6e6e6;
 }
 #startGame {
 	margin: auto;
@@ -21,9 +21,9 @@ body {
 }
 #cellImage {
 	background-image: url(images/WhiteCell.png);
+	background-color: #757575;
 	width: 200px;
 	height: 200px;
-	background-color: #ffffff;
 	float: left;
 	border:solid;
 	border-left: 0px;
@@ -36,8 +36,12 @@ body {
 	border-left: 0px;
 	border-bottom: 0px;
 	border-top: 0px;
+	background-color: #757575;
+	color: #ffffff;
+	border-color: #000000;
 }
 #cellText {
+	background-color: #c9c9c9;
 	margin: auto;
 	width: 400px;
 	height: 160px;
@@ -52,6 +56,15 @@ body {
 	border-left: 0px;
 	border-top: 0px;
 	border-bottom: 0px;
+	background-color: #757575;
+	color: #ffffff;
+	border-color: #000000;
+}
+#nextButton:hover {
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
+	transition-duration: .5s;
 }
 #stages {
 	margin:auto;
@@ -60,10 +73,21 @@ body {
 	height: 100px;
 }
 .allStages {
+	text-align: center;
+	color: #ffffff;
+	background-color: #666666;
 	border:solid;
+	border-color: #000000;
 	float: left;
 	width: 120px;
 	height: 100px;
+	line-height: 100px;
+}
+.allStages:hover {
+	cursor: pointer;
+	background-color: #f5f5f5;
+	color: #000000;
+	transition-duration: 0.5s;
 }
 #stageOne {
 
@@ -76,9 +100,20 @@ body {
 
 }
 #boss {
+	text-align: center;
+	color: #ffffff;
+	background-color: #666666;
+	border:solid;
+	border-color: #000000;
 	margin: auto;
 	margin-top: 20px;
 	width: 300px;
 	height: 100px;
-	border:solid;
+	line-height: 100px;
+}
+#boss:hover {
+	cursor: pointer;
+	background-color: #f5f5f5;
+	color: #000000;
+	transition-duration: 0.5s;
 }
