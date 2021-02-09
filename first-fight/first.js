@@ -91,7 +91,17 @@ function enable(){
         }
     });
 }
-
+function covidsymptoms(){
+    if (matchedCard.length == 2) {
+        document.getElementById("symptoms").innerHTML = "Covid symptoms may appear 2-14 days after exposure to the virus.";
+    };
+    if (matchedCard.length == 4) {
+        document.getElementById("symptoms").innerHTML = "Covid symptoms may vary with each individual.";
+    };
+    if (matchedCard.length == 6) {
+        document.getElementById("symptoms").innerHTML = "Older Adults and people with underlying medical conditions are at higher risk from Covid.";
+    };
+}
 function congratulations(){
     if (matchedCard.length == 8){
 
@@ -105,19 +115,26 @@ for (var i = 0; i < cards.length; i++){
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
     card.addEventListener("click",congratulations);
+    card.addEventListener("click", covidsymptoms);
 };
 
 var talking = 0;
 function stageOneTalk() {
     talking += 1;
     if (talking == 1) {
-        document.getElementById("header").innerHTML = "In this stage we will learn about the symptoms of Covid";
+        document.getElementById("header").innerHTML = "In this stage we will learn about the symptoms of Covid.";
     }
     else if (talking == 2) {
-        document.getElementById("header").innerHTML = "Flip the cards below and find clues";
+        document.getElementById("header").innerHTML = "Flip the cards below and find clues.";
     }
     else if (talking == 3) {
-        document.getElementById("header").innerHTML = "Match all the clues together and get the final clue needed to beat Covid!"
+        document.getElementById("header").innerHTML = "Matching cards will teach you something about covid symptoms.";
+    }
+    else if (talking == 4) {
+        document.getElementById("header").innerHTML = "Pay attention to the 'Information' Box in the bottom."
+    }
+    else if (talking == 5) {
+        document.getElementById("header").innerHTML = "Match all the clues together and get more information needed to know for Covid!"
         document.getElementById("headerButton").style.display = "none";
     }
 }

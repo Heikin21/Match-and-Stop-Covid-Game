@@ -2,7 +2,7 @@ var talking = 0;
 function cellTalk() {
 	talking += 1;
 	if (talking == 1) {
-		document.getElementById("cellText").innerHTML = "Hallo, I am Cell.";
+		document.getElementById("cellText").innerHTML = "Hello, I am Cell.";
 	}
 	else if (talking == 2) {
 		document.getElementById("cellText").innerHTML = "I'm a white blood cell.";

@@ -147,6 +147,26 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 }
+#symptoms {
+	margin: auto;
+	width: 500px;
+	height: 100px;
+	border:solid;
+	border-color: #000000;
+	text-align: center;
+	color: #ffffff;
+	margin-top: -50px;
+	background-color: #006e6a;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
   
 .popup {
 	margin: 20px auto;
@@ -164,38 +184,35 @@ h1 {
 	font-size: 40px;
 }
 
-.popup .close {
-	position: absolute;
-	top: 20px;
-	right: 30px;
-	transition: all 200ms;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #333;
-}
-
-.popup .close:hover {
-	color: #E5F720;
-}
-
-.popup .content-1,
-.content-2 {
-	background-color: blue;
+.popup .content-1 {
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .show {
 	visibility: visible !important;
 	opacity: 100 !important;
 }
+#popupSpace {
+	margin: auto;
+	width: 400px;
+	height: 200px;
+	border:solid;
+}
+#popupText {
+	text-align: center;
+}
 #button {
-	background-color: red;
-	margin-left: 40%;
-	float: left;
+	margin: auto;
+	background-color: #e6fffe;
+	text-align: center;
+	margin-top: 10px;
+	border: solid;
 	width: 200px;
-	height: 100px;
+	height: 30px;
+}
+#button:hover {
+	cursor: pointer;
 }
 
 @keyframes flipCard {

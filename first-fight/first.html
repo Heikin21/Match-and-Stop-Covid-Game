@@ -15,9 +15,9 @@
     <div class="container">
         <header>
             <h1>Stage 1: Symptons</h1>
-            <p id="header">Welcome to Stage 1</p>
+            <p id="header">Welcome to Stage 1!<br> But First <a href="https://forms.gle/kudwopucQPaN2muh7" target="_blank">Click Me!</a></p>
         </header>
-        <div id="headerButton" onclick="stageOneTalk()">Next</div>
+        <div id="headerButton" onclick="stageOneTalk()" class="noselect">Next</div>
 
         <ul class="deck" id="card-deck">
             <li class="card" id="infected" type="head-side-cough">
@@ -35,40 +35,43 @@
             <li class="card" type="head-side-cough">
                 <i class="fas fa-head-side-cough"></i>
             </li>
-            <li class="card" type="lungs">
-                <i class="fas fa-lungs"></i>
+            <li class="card" type="smell">
+                <i class="fas fa-wind"></i>
             </li>
             <li class="card" type="tired">
                 <i class="far fa-tired"></i>
             </li>
-            <li class="card" type="lungs">
-                <i class="fas fa-lungs"></i>
+            <li class="card" type="smell">
+                <i class="fas fa-wind"></i>
             </li>
         </ul>
+        <div id="symptoms" class="noselect">Information</div>
 
         <div id="popup1" class="overlay">
             <div class="popup">
-                <h2>Signs of COVID-19:</h2>
+                <h2>Common symptoms of COVID-19:</h2>
                 <div class="content-1"> 
                     <ul>
                     <i class="fas fa-thermometer-full iconSpace"></i>
-                    Fever
+                    Fever or Chills
                     </ul>
                     <ul> 
                     <i class="fas fa-head-side-cough iconSpace"></i>
-                    Cough
+                    Cough or trouble breathing
                     </ul>
                     <ul> 
                     <i class="far fa-tired iconSpace"></i>
-                    Tired
+                    Muscle or body pain
                     </ul>
                     <ul>
-                    <i class="fas fa-lungs iconSpace"></i>
-                    Trouble Breathing
+                    <i class="fas fa-wind"></i>
+                    Loss of taste and smell
                     </ul>
                 </div>
-                <div onclick="window.location.href = '../second/second.html';" id="button" class="popup">Stage 2
+                <div id="popupSpace">
+                    <div id="popupText"> Other symptoms include:<br> fatigue,<br> headaches,<br> sore throats,<br> congestion or runny noses,<br> nausea or vomiting,<br> and diarrhea</div>
                 </div>
+                <div onclick="window.location.href='https://forms.gle/q1Y5TrQ3pDL2ZYiM6';" id="button">Next!</div>
             </div>
         </div>
     </div>
